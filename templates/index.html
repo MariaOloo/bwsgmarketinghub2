@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+     <section class="page-section clearfix">
+            <div class="container">
+                <div class="intro">
+                    <img class="intro-img img-fluid mb-3 mb-lg-5 rounded " src="{% static 'img/Mary Oloo - Profile.jpg' %}" alt="..." style="max-width: 90%; height: auto;" />
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Hello</span>
+                            <span class="section-heading-lower">I'm Maria Oloo</span>
+                        </h2>
+                        <p class="mb-3">A certified Digital Marketer with a specialization in social media marketing.
+I help create, design and implement social media campaigns for various organizations, companies , conferences and events through content creation, market research and SEO optimization.</p>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="about.html">learn More</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">At BWSG Marketing Hub</span>
+<!--                                <span class="section-heading-lower">To You</span>-->
+                            </h2>
+                            <p class="mb-0">We believe in the power of nuanced marketing strategies that navigate the spectrum from black and white to the many shades of gray. Join us on this journey of creativity, strategy, and digital brilliance. Elevate your brand with BWSG Marketing Hub—where innovation meets impact.
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--        Client logos-->
+    <section class="page-section">
+    <div class="container">
+        <h2 class="text-center mt-0">Our Clients</h2>
+        <hr class="divider my-4" />
+        <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Client Logo 1 -->
+                <div class="carousel-item active">
+                    <img src="{% static 'img/careers office.png' %}" class="d-block mx-auto rounded w-25 img-fluid align-content-center" alt="Client 1">
+                </div>
+                <!-- Client Logo 2 -->
+                <div class="carousel-item">
+                    <img src="{% static 'img/duaralogo.jpg' %}" class="d-block mx-auto rounded w-25 img-fluid align-content-center" alt="UoN Careers Office">
+                </div>
+<!--                Client logo 3-->
+                 <div class="carousel-item">
+                    <img src="{% static 'img/wellness&you logo.jpg' %}" class="d-block mx-auto rounded w-25 img-fluid align-content-center" alt="Wellness & You podcast">
+                </div>
+<!--                Client logo 4-->
+                 <div class="carousel-item">
+                    <img src="{% static 'img/coachelevate.jpg' %}" class="d-block mx-auto rounded w-25 img-fluid align-content-center" alt="Coach Elevate">
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
+
+
+    </body>
+</html>

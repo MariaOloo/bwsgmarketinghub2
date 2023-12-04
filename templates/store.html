@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+ <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner bg-faded text-center rounded">
+                        <h2 class="section-heading mb-5">
+                            <span class="section-heading-upper">Let's</span>
+                            <span class="section-heading-lower">Work</span>
+                        </h2>
+                        <h2>Request a Quote</h2>
+                        <form method="post" action="{% url 'quote_requests_list' %}">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+    </body>
+</html>
